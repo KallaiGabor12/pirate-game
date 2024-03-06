@@ -19,7 +19,7 @@ public class PlayerCombat : MonoBehaviour
     private bool m_combatIdle = false;
     private bool m_isDead = false;
     
-    // Start is called before the first frame update
+    // Start is called before the first frame update/
     void Start()
     {
         m_animator = GetComponent<Animator>();
@@ -27,7 +27,7 @@ public class PlayerCombat : MonoBehaviour
         m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_Bandit>();
     }
 
-    // Update is called once per frame
+    // Update is called once per frame/
     void Update()
     {
         if (!m_grounded && m_groundSensor.State())
