@@ -43,7 +43,6 @@ public class PlayerCombat : MonoBehaviour
             m_animator.SetBool("Grounded", m_grounded);
         }
 
-
         float inputX = Input.GetAxis("Horizontal");
 
 
